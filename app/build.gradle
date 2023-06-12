@@ -9,7 +9,6 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.arch.app"
         minSdk 21
         targetSdk 33
         versionCode 1
@@ -52,9 +51,9 @@ dependencies {
 publishing {
     publications {
         release(MavenPublication) {
-            groupId = 'com.arch.app'
-            artifactId = 'extension'
-            version = '0.0.0'
+            groupId = 'com.arch.app.extension'
+            artifactId = 'lib'
+            version = '0.0.1'
 
             afterEvaluate {
                 from components.release
